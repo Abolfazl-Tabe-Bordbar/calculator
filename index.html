@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Calculator</title>
+</head>
+
+<body class="bg-slate-300 w-screen h-screen flex justify-center items-center">
+    <section
+        class="w-9/12 md:w-6/12 lg:w-4/12 h-5/6 bg-slate-900/90 rounded-md shadow-xl shadow-blue-500 flex flex-col justify-start items-center overflow-hidden">
+        <div class="w-full h-10  flex justify-start items-center">
+            <div class="w-5 h-5 bg-red-400 shadow-md shadow-red-400 rounded-full ml-1"></div>
+            <div class="w-5 h-5 bg-yellow-400 shadow-md shadow-yellow-400 rounded-full ml-2"></div>
+            <div class="w-5 h-5 bg-green-400 shadow-md shadow-green-400 rounded-full ml-2"></div>
+        </div>
+        <div id="show_operation" class="w-11/12 h-1/6  mt-2 text-slate-200 text-right text-3xl flex justify-end items-center"></div>
+        <div class="w-full h-4/6  mt-auto flex flex-col justify-around items-center">
+            <div class="w-full h-[20%] bg-transparent flex justify-between items-center">
+                <button id="btn_c" type="button" class="hover:bg-slate-900 w-2/4 h-full border border-slate-400 text-white text-lg font-bold">c</button>
+                <button id="btn_baghimandeh" type="button" class="hover:bg-slate-900 w-1/4 h-full border border-slate-400 text-white text-lg font-bold">%</button>
+                <button id="btn_taghsim" type="button" class="hover:bg-slate-900 w-1/4 h-full border border-slate-400 text-white text-lg font-bold">/</button>
+            </div>
+            <div class="w-full h-[20%] bg-transparent flex justify-between items-center">
+                <button id="btn_7" type="button" class="hover:bg-slate-900 w-1/4 h-full border border-slate-400 text-white text-lg font-bold">7</button>
+                <button id="btn_8" type="button" class="hover:bg-slate-900 w-1/4 h-full border border-slate-400 text-white text-lg font-bold">8</button>
+                <button id="btn_9" type="button" class="hover:bg-slate-900 w-1/4 h-full border border-slate-400 text-white text-lg font-bold">9</button>
+                <button id="btn_X" type="button" class="hover:bg-slate-900 w-1/4 h-full border border-slate-400 text-white text-lg font-bold">X</button>
+            </div>
+            <div class="w-full h-[20%] bg-transparent flex justify-between items-center">
+                <button id="btn_4" type="button" class="hover:bg-slate-900 w-1/4 h-full border border-slate-400 text-white text-lg font-bold">4</button>
+                <button id="btn_5" type="button" class="hover:bg-slate-900 w-1/4 h-full border border-slate-400 text-white text-lg font-bold">5</button>
+                <button id="btn_6" type="button" class="hover:bg-slate-900 w-1/4 h-full border border-slate-400 text-white text-lg font-bold">6</button>
+                <button id="btn_mines" type="button" class="hover:bg-slate-900 w-1/4 h-full border border-slate-400 text-white text-lg font-bold">-</button>
+            </div>
+            <div class="w-full h-[20%] bg-transparent flex justify-between items-center">
+                <button id="btn_1" type="button" class="hover:bg-slate-900 w-1/4 h-full border border-slate-400 text-white text-lg font-bold">1</button>
+                <button id="btn_2" type="button" class="hover:bg-slate-900 w-1/4 h-full border border-slate-400 text-white text-lg font-bold">2</button>
+                <button id="btn_3" type="button" class="hover:bg-slate-900 w-1/4 h-full border border-slate-400 text-white text-lg font-bold">3</button>
+                <button id="btn_plus" type="button" class="hover:bg-slate-900 w-1/4 h-full border border-slate-400 text-white text-lg font-bold">+</button>
+            </div>
+            <div class="w-full h-[20%] bg-transparent flex justify-between items-center">
+                <button id="btn_0" type="button" class="hover:bg-slate-900 w-2/4 h-full border border-slate-400 text-white text-lg font-bold">0</button>
+                <button id="btn_dot" type="button" class="hover:bg-slate-900 w-1/4 h-full border border-slate-400 text-white text-lg font-bold">.</button>
+                <button id="btn_mosavi" type="button" class="hover:bg-blue-600 bg-blue-500   w-1/4 h-full border border-slate-400 text-white text-lg font-bold">=</button>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./man.js"></script>
+</html>
